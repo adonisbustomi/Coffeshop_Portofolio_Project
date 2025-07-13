@@ -1,71 +1,71 @@
-![Coffeeshop Dashboard_page-0001](https://github.com/user-attachments/assets/686a4cf9-df67-41c7-8aaa-6f4c3f90c3af)# SQL_Coffeshop_Portofolio_Project
-This SQL code serves as both a learning resource and a personal portfolio to demonstrate my growing skills in data analysis and business intelligence.
-# 📊 Marketing Performance Analytics – SQL + Power BI
+# ☕ Coffee Shop Sales Dashboard – SQL & Power BI
 
-This project analyzes customer engagement and conversion across various product campaigns. Using SQL for data wrangling and Power BI for visualization, it identifies key trends in marketing effectiveness.
+This project analyzes coffee shop sales transactions to identify revenue patterns, peak hours, top-performing products, and category contribution. SQL was used for data transformation and analysis, while Power BI was used to build a fully interactive dashboard.
 
 ---
 
-## 🔍 Business Questions
+## 📊 Business Objectives
 
-- Are we converting views into purchases efficiently?
-- Which content types (Video, Social Media, Blog) drive the highest engagement?
-- What products have the highest/lowest conversion rates?
-- Is marketing effort translating into better customer sentiment?
-
----
-
-## 🧰 Tools Used
-
-- **SQL (MySQL):** Data cleaning, deduplication, transformation, exploration  
-- **Power BI:** Dashboard visualization (conversion, rating, engagement)  
-- **Excel (for CSV management)**
+- Understand **monthly revenue trends**
+- Identify **best-selling products** and **highest-earning categories**
+- Analyze **sales by time of day** to find peak hours
+- Evaluate **product-level performance** within each category
+- Track **monthly growth** and **daily revenue movement**
 
 ---
 
-## 📁 Database Schema
+## 🛠 Tools Used
 
-Tables used:
-- `customers`, `products`, `customer_reviews`, `customer_journey`, `engagement_data`
-
-📌 *See `marketing.sql` for all cleaning & exploration queries.*
+- **SQL (MySQL)** – for data cleaning, wrangling, aggregations  
+- **Power BI** – for dashboard visualization  
+- **Excel (CSV)** – for source file management
 
 ---
 
-## 🧹 Data Preparation Highlights
+## 📁 Dataset Structure
 
-- Removed duplicate rows using `ROW_NUMBER() OVER (...)`
-- Standardized `ContentType` values (`'video' → 'Video'`, `'socialmedia' → 'Social Media'`)
-- Split combined column `ViewsClicksCombined` into separate `views` and `clicks`
-- Merged customer data with `geography` into a single `customers2` table
+Main table: `transactions`  
+Columns:
+- `transaction_id`, `transaction_date`, `transaction_time`
+- `transaction_qty`, `unit_price`
+- `store_id`, `store_location`
+- `product_id`, `product_category`, `product_type`, `product_detail`
+
+---
+
+## 🧹 Data Cleaning & Preparation
+
+- Converted `transaction_date` from text to date format using `STR_TO_DATE`
+- Created revenue field using: `transaction_qty * unit_price`
+- Created time-based intervals: `07:00–10:00`, `11:00–14:00`, etc.
+- Calculated daily and monthly revenue
+- Calculated revenue share by product category
+- Removed duplicates and anomalies from timestamp data
 
 ---
 
 ## 📈 Key Insights
 
-### 1. 📉 Engagement naik, tapi conversion turun
-Despite high visibility (9M+ views), **average conversion rate is only 9.57%**, with a **noticeable drop in Q3**.
+### 1. 💵 Revenue Trend
+- Highest monthly revenue observed in **March and May**
+- Positive growth month-to-month until Q3
 
-### 2. 📱 Content performance
-- **Social Media** and **Video** contribute 80%+ of engagement
-- Blog posts generate steady interest but lower click rates
+### 2. ☕ Product Performance
+- **Latte**, **Dark Chocolate**, and **Chai** contributed most to total revenue
+- Product detail `"Dark chocolate Lg"` was the top-selling item (Rp 4,428K)
 
-### 3. 🛍 Product with highest conversion
-- `Hockey Stick` and `Ski Boots` reach **>14% conversion**
-- `Swim Goggles` and `Yoga Mat` perform below average
+### 3. ⏰ Peak Hours
+- **18:00 – 21:00** and **15:00 – 17:00** were the busiest time slots
+- Strong correlation between late-evening transactions and higher revenue
 
-### 4. ⭐ Customer sentiment
-- Average rating across all products: **3.69**
-- Highest-rated: **Climbing Rope (3.91)**  
-- Lowest-rated: **Golf Clubs (3.48)**
-
-### 5. 🧪 Specific Query Insight
-> Customers who gave low ratings (<3) still made **multiple purchases**, indicating room for **product improvement** despite existing loyalty.
+### 4. 🏪 Store Revenue Share
+- Hell's Kitchen: **34.29%**  
+- Astoria: **33.20%**  
+- Lower Manhattan: **32.52%**
 
 ---
 
 ## 📊 Dashboard Preview
 
-![dashboard](![Coffeeshop Dashboard_page-0001](https://github.com/user-attachments/assets/22452ee9-c8a8-4886-baa0-1c38e5c00835)
+![dashboard](![Coffeeshop Dashboard_page-0001](https://github.com/user-attachments/assets/8db623bf-79a6-4490-aebd-751f6bb9040f)
 )
-
