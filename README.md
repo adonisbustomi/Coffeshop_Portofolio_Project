@@ -1,4 +1,4 @@
-# SQL_Coffeshop_Portofolio_Project
+![Coffeeshop Dashboard_page-0001](https://github.com/user-attachments/assets/686a4cf9-df67-41c7-8aaa-6f4c3f90c3af)# SQL_Coffeshop_Portofolio_Project
 This SQL code serves as both a learning resource and a personal portfolio to demonstrate my growing skills in data analysis and business intelligence.
 # 📊 Marketing Performance Analytics – SQL + Power BI
 
@@ -66,8 +66,9 @@ Despite high visibility (9M+ views), **average conversion rate is only 9.57%**, 
 
 ## 📊 Dashboard Preview
 
-![dashboard](visuals/conversion_rate_by_product.png)  
-🔗 [See Live Dashboard (Power BI)](https://your-powerbi-link-here)
+![dashboard](![Coffeeshop Dashboard_page-0001](https://github.com/user-attachments/assets/22452ee9-c8a8-4886-baa0-1c38e5c00835)
+)
+
 
 ---
 
