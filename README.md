@@ -52,7 +52,7 @@ Columns:
 
 ### 2. ☕ Product Performance
 - **Latte**, **Dark Chocolate**, and **Chai** contributed most to total revenue
-- Product detail `"Dark chocolate Lg"` was the top-selling item (Rp 4,428K)
+- Product detail `"Dark chocolate Lg"` was the top-selling item ($ 4428)
 
 ### 3. ⏰ Peak Hours
 - **18:00 – 21:00** and **15:00 – 17:00** were the busiest time slots
