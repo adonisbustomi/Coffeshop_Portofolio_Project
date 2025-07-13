@@ -69,8 +69,3 @@ Despite high visibility (9M+ views), **average conversion rate is only 9.57%**, 
 ![dashboard](![Coffeeshop Dashboard_page-0001](https://github.com/user-attachments/assets/22452ee9-c8a8-4886-baa0-1c38e5c00835)
 )
 
-
----
-
-## 📂 Folder Structure
-
